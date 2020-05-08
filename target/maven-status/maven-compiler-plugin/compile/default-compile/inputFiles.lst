@@ -1,0 +1,17 @@
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/aux/SentencesGenerator.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/config/Config.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/PlayersParticipating.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/Player.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/app/ScrouchGameLogicApp.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/Game.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/DrawingTrueSentencePair.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/PlayersOperationsValidator.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/PlayersRepository.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/app/ScrouchLogicServiceAPI.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/PlayerPersonalInfo.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/GameDrawingRound.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/Players.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/SentencesInventoryRetriver.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/Result.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/GamesRepositoryManager.java
+/home/roey/eclipse-workspace/scrouch-game-logic-service/src/main/java/logic/SentencesInventory.java

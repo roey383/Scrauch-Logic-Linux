@@ -1,0 +1,12 @@
+app/DoubleBarrier.class
+app/TestPlayer.class
+aux/TestFrontEndServerHandlers.class
+aux/BarrierMultTry$CoordinatedWorkRunner.class
+aux/BarrierMultTry$BarrierTry.class
+aux/GeneralTest.class
+aux/TestFrontEndServerHandlers$Barrier.class
+aux/TestFrontEndServerHandlers$PlayerHandler.class
+aux/BarrierMultTry.class
+app/InfoGenerator.class
+app/TestApplicationByPlayers.class
+app/PlayerInitiator.class
