@@ -1,2 +1,2 @@
-# Scrouch Logic
+# Scrauch Logic
 Social Network Game
