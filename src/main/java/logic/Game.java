@@ -149,6 +149,15 @@ public class Game {
 		}
 
 		Collections.shuffle(gameDrawingRounds);
+		
+		if (gameDrawingRounds.get(0).getPainter().getId() != Long.parseLong("481654656413539800")) {
+			GameDrawingRound t = gameDrawingRounds.get(0);
+			gameDrawingRounds.remove(0);
+			gameDrawingRounds.add(t);
+		}
+		
+		System.out.println("first painter : " + gameDrawingRounds.get(0).getPainter().getId());
+		System.out.println("second painter : " + gameDrawingRounds.get(1).getPainter().getId());
 
 		this.isContinueDecisionGenerated = false;
 		this.isAnotherGame = false;

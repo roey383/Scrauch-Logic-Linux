@@ -41,10 +41,13 @@ public class ScrouchGameLogicApp implements ScrouchLogicServiceAPI{
 
 //	
 	@Override
-	public int joinPlayerToGame(long playerId, String gameCode) {
+	public synchronized int joinPlayerToGame(long playerId, String gameCode) {
 		// TODO Auto-generated method stub
 		
 		Game game = gamesRepository.getGame(gameCode);
+		if (game.getNumOfPlayers() - game.getNumOfLoggedInPlayers() == 0) {
+			return -1;
+		}
 		game.addPlayer(playerId);
 		playersRepository.addPlayer(game.getPlayer(playerId));
 		int numberOfPlayersLeftToJoin = game.getNumOfPlayers() - game.getNumOfLoggedInPlayers();

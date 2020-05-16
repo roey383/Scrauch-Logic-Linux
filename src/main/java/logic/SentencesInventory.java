@@ -1,11 +1,12 @@
 package logic;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class SentencesInventory {
 
@@ -13,9 +14,22 @@ public class SentencesInventory {
 
 	public SentencesInventory(String path, boolean shuffle) throws IOException {
 		// TODO Auto-generated constructor stubimport java.net.URL;
-		String absolutPath = this.getClass().getClassLoader().
-				getResource(path).getPath();
-		this.sentences = Files.lines(Paths.get(absolutPath)).collect(Collectors.toList());
+//		String absolutPath = this.getClass().getClassLoader().
+//				getResource(path).getPath();
+//		this.sentences = Files.lines(Paths.get(absolutPath)).collect(Collectors.toList());
+		this.sentences = new ArrayList<String>();
+		InputStream input = this.getClass().getClassLoader().getResourceAsStream(path);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+		String line = reader.readLine();
+		try {
+		    while (line != null) {
+		        this.sentences.add(line);
+		        line = reader.readLine();
+		    }  
+		} catch (IOException e) {
+		    // TODO Auto-generated catch block
+		    e.printStackTrace();
+		}
 		if (shuffle) {
 			Collections.shuffle(sentences);
 		}
