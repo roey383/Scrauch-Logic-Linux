@@ -7,8 +7,8 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import app.ScrouchGameLogicApp;
-import app.ScrouchLogicServiceAPI;
+import app.ScrauchGameLogicApp;
+import app.ScrauchLogicServiceAPI;
 
 public class TestFrontEndServerHandlers {
 
@@ -18,7 +18,7 @@ public class TestFrontEndServerHandlers {
 		// TODO Auto-generated method stub
 		
 		try {
-			ScrouchLogicServiceAPI app = new ScrouchGameLogicApp();
+			ScrauchLogicServiceAPI app = new ScrauchGameLogicApp();
 			Barrier barrier = new Barrier(numOfPlayers);
 			
 			startOneGame(app, barrier);
@@ -35,7 +35,7 @@ public class TestFrontEndServerHandlers {
 
 	}
 
-	private static void startOneGame(ScrouchLogicServiceAPI app, Barrier barrier) {
+	private static void startOneGame(ScrauchLogicServiceAPI app, Barrier barrier) {
 		// TODO Auto-generated method stub
 		
 		List<PlayerHandler> playerHandlers = new ArrayList<PlayerHandler>(); 
@@ -55,7 +55,7 @@ public class TestFrontEndServerHandlers {
 	
 	public static class PlayerHandler extends Thread{
 
-		public PlayerHandler(ScrouchLogicServiceAPI app, Barrier barrier) {
+		public PlayerHandler(ScrauchLogicServiceAPI app, Barrier barrier) {
 			// TODO Auto-generated constructor stub
 			
 			if (true) {

@@ -14,9 +14,9 @@ public class TestApplicationByPlayers extends Thread{
 	public static final int IMAGE_HEIGHT = 100;
 	public static final int CHANCE_TO_CONTINUE = 70;
 	private static final int NUMBER_OF_GROUPS = 10;
-	private ScrouchLogicServiceAPI app;
+	private ScrauchLogicServiceAPI app;
 
-	public TestApplicationByPlayers(ScrouchLogicServiceAPI app) {
+	public TestApplicationByPlayers(ScrauchLogicServiceAPI app) {
 		// TODO Auto-generated constructor stub
 		this.app = app;
 	}
@@ -25,7 +25,7 @@ public class TestApplicationByPlayers extends Thread{
 		// TODO Auto-generated method stub
 
 		try {
-			ScrouchLogicServiceAPI app = new ScrouchGameLogicApp();
+			ScrauchLogicServiceAPI app = new ScrauchGameLogicApp();
 
 			List<TestApplicationByPlayers> groups = new ArrayList<TestApplicationByPlayers>();
 
@@ -59,7 +59,7 @@ public class TestApplicationByPlayers extends Thread{
 		List<TestPlayer> joiners = new ArrayList<TestPlayer>();
 
 		playerInitiator.start();
-		ScrouchGameLogicApp.logger.info("Player initiator started: " + playerInitiator.getName());
+		ScrauchGameLogicApp.logger.info("Player initiator started: " + playerInitiator.getName());
 
 		try {
 			Thread.sleep(200);
@@ -76,7 +76,7 @@ public class TestApplicationByPlayers extends Thread{
 
 		for (TestPlayer joiner : joiners) {
 			joiner.start();
-			ScrouchGameLogicApp.logger.info("joiner started: " + joiner.getName());
+			ScrauchGameLogicApp.logger.info("joiner started: " + joiner.getName());
 		}
 
 	}

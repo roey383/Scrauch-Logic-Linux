@@ -46,6 +46,12 @@ public class GamesRepositoryManager {
 		return codeToGame.get(gameCode);
 	}
 
+	public void removeGame(String gameCode) {
+		// TODO Auto-generated method stub
+		codeToGame.remove(gameCode);
+		
+	}
+
 
 	
 

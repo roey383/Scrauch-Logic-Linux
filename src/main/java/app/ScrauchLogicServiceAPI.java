@@ -8,7 +8,7 @@ import logic.DrawingTrueSentencePair;
 import logic.PlayerPersonalInfo;
 import logic.Result;
 
-public interface ScrouchLogicServiceAPI {
+public interface ScrauchLogicServiceAPI {
 	
     /**
      * initialize a new game with giving params
