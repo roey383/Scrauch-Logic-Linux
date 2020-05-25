@@ -1,4 +1,4 @@
-package bux;
+package aux;
 
 import java.util.ArrayList;
 import java.util.List;

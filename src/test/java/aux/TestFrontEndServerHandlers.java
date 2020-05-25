@@ -1,4 +1,4 @@
-package bux;
+package aux;
 
 import java.io.IOException;
 import java.util.ArrayList;
